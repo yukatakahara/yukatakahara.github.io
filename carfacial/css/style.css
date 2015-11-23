@@ -1,0 +1,448 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+/*  font-size: 100%;*/
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+  }
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+  }
+ol, ul {
+  list-style: none;
+  }
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  }
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  }
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  }
+blockquote, q {
+  quotes: "" "";
+  }
+
+a{
+  color: blue;
+}
+
+strong {font-weight: bold;}
+
+div.preload {display: none;}
+
+/*******************************
+ * + basic layout
+ * *******************************/
+
+body, html {
+  font-family: gotham, arial, helvetica, sans-serif;
+  font-size: small;
+  }
+
+#container {
+  width: 1000px;
+  margin: 0 auto;
+  }
+
+/*
+#container {position: relative;margin-left: auto; margin-left: auto;margin-right: auto;width: 990px;text-align: left;}
+body {height: 100%;margin: 0 0 20px 0;text-align: center;}
+*/
+
+/*******************************
+ *  +Clearfix   
+ *  *******************************/
+
+.clearfix:after {
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden;
+  }
+
+.clearfix {display:inline-block;}
+  /* Hide from IE Mac \*/
+.clearfix {display:block;}
+ /* End hide from IE Mac */
+
+#header {
+  color: #fff;
+  background: #0054a6;
+  
+}
+
+#header h1 a {
+  display: block;
+  float: left;
+  width: 465px;
+  height: 86px;
+  background: #0054a5 url(../images/header.gif) -21px -30px no-repeat;
+  text-indent: -5000px;
+  margin: 20px 0px 0px 0px;
+  }
+
+
+/* -- NAV -- */
+
+#nav {
+  width: 327px;
+  height: 40px;
+  float: right;
+  margin: 20px 0 10px 0;
+  }
+
+#nav li a {
+  display: block;
+  xfloat: left;
+  height: 40px;
+  background-image: url(../images/nav.png);
+  background-repeat: no-repeat;
+  text-indent: -5000px;
+  }
+
+#nav li {
+  float: left;
+  height: 40px;
+  display: block;
+  }
+
+#nav li#nav_home a {
+  width: 99px;
+  background-position: 0 0;
+  margin: 0 10px 0 0;
+  }
+
+#nav li#nav_about a {
+  width: 94px;
+  background-position: -109px 0px;
+  margin: 0 10px 0 0;
+  }
+
+#nav li#nav_cart a {
+  width: 114px;
+  background-position: -213px 0px;
+  }
+
+#nav li#nav_home  a:hover  {background-position: 0 -40px;}
+#nav li#nav_about a:hover  {background-position: -109px -40px;}
+#nav li#nav_cart  a:hover  {background-position: -213px -40px;}
+
+/*  car info  */
+
+#info{
+width: 150px;
+float: right;
+margin: 90px 35px 0px 0px;
+background-color: #D6D6D6;
+text-align: left;
+}
+
+#info_inner{
+	padding: 0px 0px 0px 10px
+}
+
+#quantity_label{
+  margin: 5px 0px 0px 0px;
+}
+ 
+#name{
+  margin: 0px 0px 5px 0px;
+}
+
+#price{
+	float: right;
+  margin: 0px 5px 0px 0px;
+}
+
+#size{
+  margin: 0px 0px 5px 0px;
+}
+
+#color_selection{
+  margin: 0px 0px 5px 0px;
+}
+
+.selected_color{
+	border-style: solid;
+	border-color: red;	
+	border-width: thin;
+}
+
+.selected_color2{
+  border-left: thin solid black;
+}
+
+#qty{
+z-index: -2;
+}
+
+#mirror{
+  margin: 5px 0px 0px 0px;
+}
+
+
+/* -- cart status -- */
+
+#cart_status {
+  width: 311px;
+  padding: 12px 8px 12px 8px;
+  font-size: .9em;
+  text-align: center;
+  float: right;
+  clear: right;
+	background: #2E3092 url(../images/cart_status.gif) top left no-repeat;
+
+  }
+
+#cart_status .status {
+  padding: 0 8px 0 0 ;
+  margin: 0 5px 0  0;
+	 border-right: 2px solid #7DA7D9;
+  }
+
+#cart_status a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 2px solid #7DA7D9;
+  }
+
+#cart_status a:hover {border-bottom: 2px solid #fff;}
+
+#add_to_cart{
+margin: 10px 0 0px 0;
+cursor:pointer;
+}
+
+#main_image{
+//width: 800px;
+float: left;
+}
+
+#main_pic{
+//width: 800px;
+}
+
+
+b.rtop, b.rbottom{display:block;background: #ffffff}
+b.rtop b, b.rbottom b{display:block;height: 1px;overflow: hidden; background: #D6D6D6}
+b.r1{margin: 0 5px}
+b.r2{margin: 0 3px}
+b.r3{margin: 0 2px}
+b.rtop b.r4, b.rbottom b.r4{margin: 0 1px;height: 2px}
+
+
+#wrap{
+clear:both;
+text-align: center;
+margin: 0 auto;
+} 
+
+#mycarousel{
+
+cursor:pointer;
+
+}
+
+#small_images_inner{
+/*margin: 0px 0px 0px 0px;*/
+width: 800px ;
+margin-left: auto ;
+margin-right: auto ;
+
+}
+
+img.small_image{
+  height: 100px;
+  width: 100px;
+}
+
+
+
+/* CHECKOUT PAGE */
+
+/* cart table  */
+
+.cart_table{
+width: 610px;
+margin: 0px 0px 20px 0px;
+}
+
+.table_top_row{
+  height:30px;
+}
+
+.table_item{
+  font-weight:bold;
+	width: 300px;
+}
+
+.table_price{
+  font-weight:bold;
+	text-align:right;
+  padding: 0px 10px 0px 0px;
+}
+
+.table_price2{
+	text-align:right;
+  padding: 0px 10px 0px 0px;
+}
+
+.table_qty{
+	text-align:center;
+  font-weight:bold;
+}
+
+.table_qty2{
+	text-align:center;
+}
+
+.table_equal_sign{
+  width: 0px;
+}
+
+.table_total{
+  font-weight:bold;
+	text-align:right;
+}
+
+.table_total2{
+	text-align:right;
+  padding: 0px 0px 0px 0px;
+}
+
+.table_remove{
+	text-align:right;
+}
+
+#table_remove{
+	text-align:right;
+	width: 65px;
+}
+
+
+#update_cart{
+	float: right;
+  text-decoration:underline;
+	margin: 0px 158px 20px 0px;
+}
+
+.line{
+  color: #D3D3D3;
+  clear:both;
+}
+
+/*  totals  */
+
+.totals{
+	margin: 10px 64px 20px 0px;
+	float: right;
+	clear: both;
+}
+
+.totals_table td{
+	text-align: right;
+	padding: 0px 0px 0px 10px; 
+}
+
+.totals_table_middle_row{
+  height: 20px;
+}
+  
+#bottom_nav{
+	clear: both;
+  font-size: 18px;
+}
+
+#checkout_nav{
+	float: right;
+	margin: 0px 55px 0px 30px; 
+  text-decoration:underline;
+}
+
+#continue_shopping{
+	float: right;
+  text-decoration:underline;
+}
+
+.total_label{
+  font-weight:bold;
+}
+
+.total{
+  font-weight:bold;
+}
+
+
+
+/* CHECKOUT2 PAGE */
+
+#checkout2_bottom_nav{
+  clear:both;
+	margin: 20px 0px 0px 0px; 
+}
+
+#back_to_checkout_nav{
+  position: absolute;
+	margin: 5px 0px 0px 10px; 
+  text-decoration:underline;
+  font-size: 18px;
+}
+
+#google_form{
+	float: right; 
+}
+
+#paypal_form{
+  float: right; 
+	margin: 0px 0px 0px 20px; 
+}
+
+/* CONTACT US PAGE */
+
+#contact_us{
+  float: right; 
+	margin: 40px 100px 0px 0px; 
+  font-size: 18px; 
+}
+
+#email{
+	margin: 0px 0px 10px 0px; 
+}
+
+#chat{
+	margin: 40px 0px 0px 60px; 
+}
+
+.centerblock {
+  position: absolute;
+  width: 60%;
+  left: 25%;
+  top: 20%;
+}
+

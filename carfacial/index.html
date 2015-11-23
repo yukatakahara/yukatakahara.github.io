@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us">
+  <head>
+  <meta name="description" content="car decals" >
+  <meta name="keywords" content="car decals" >
+
+  <meta name="verify-v1" content="3siQur9cPf9rxeUcm+HlwIImww3ETE2SXFu3ZZKUe9s=" />
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Language" content="en-us" />
+
+	<link href="css/main.css" rel="stylesheet" type="text/css" />
+
+	<title>Car Facial</title>
+</head>
+
+<body onLoad="javascript:preloader()">
+	<div id="container">
+		<div id="header" class="clearfix">
+			<h1><a href="index.html"></a></h1>
+
+			<ul id="nav" class="clearfix">
+				<li id="nav_home"><a href="gallery.html"></a></li>
+				<li id="nav_about"><a href="faq.html">About</a></li>
+				<li id="nav_cart"><a class="popuptest">Cart</a></li>
+			</ul>
+
+			<div id="cart_status">
+				<span class="status">You have <a id="num_of_items" class="popuptest">0 items</a> in your cart</span>
+				<span id="total_price">$0.00</span>
+			</div>
+		</div><!-- end #header -->
+    
+		<div id="main_image">
+      <img id="main_pic" src="images/big_car1.jpg" alt="car1" />
+		</div>
+
+		<div id="info">
+    	<b class="rtop"><b class="r1"></b><b class="r2"></b><b class="r3"></b><b class="r4"></b></b>
+			<div id="info_inner">
+				<h4 id="price">$12.99</h4>
+				<h4 id="name">Three Swirl</h4>
+				<h5 id="size">20" x 10"</h5>
+				<h5 id="color_selection">Select a color: Black</h5>
+				<div id="colors">
+					<a><img id="color_black" class="selected_color" src="images/black.gif" alt="black" /></a>
+					<a><img id="color_white" src="images/white.gif" alt="white" /></a>
+					<a><img id="color_blue" src="images/blue.gif" alt="blue" /></a>
+				</div>
+				<h5 id="quantity_label">Quantity</h5>
+				<select id="qty">
+					<option selected="selected" value ="1">1</option>
+					<option value ="2">2</option>
+					<option value ="3">3</option>
+					<option value ="4">4</option>
+					<option value ="5">5</option>
+					<option value ="6">6</option>
+					<option value ="7">7</option>
+					<option value ="8">8</option>
+					<option value ="9">9</option>
+					<option value ="10">10</option>
+				</select>
+        <div id="mirror">
+          <input type="checkbox" id="mirror_checkbox" value="unchecked" /> Miror image
+        </div>
+        <div>
+					<img id="add_to_cart" src="images/add_to_cart.gif" alt="add to cart" />			
+				</div>
+			</div>
+			<b class="rbottom"><b class="r4"></b><b class="r3"></b><b class="r2"></b><b class="r1"></b></b>
+		</div>
+
+		<div id="popupContact">
+			<a id="popupContactClose">x</a>
+			<h2 id="popup_title">Please review your order</h2>
+
+			<div id="contactArea">
+				<div id="cartarea">
+				</div>	
+			
+				<div>			
+					<a id="update_cart">Update</a>
+				</div>
+
+        <hr  class="line" />
+        
+				<div class="totals">
+					<table class="totals_table">
+						<tr>
+              <td>Sub Total</td><td>=</td><td class="sub_total">$0.00</td>
+						</tr>
+						<tr class="totals_table_middle_row">
+							<td>Shipping</td><td>=</td><td class="shipping">$0.00</td>
+						</tr>
+						<tr>
+							<td class="total_label">Total</td><td>=</td><td class="total">$0.00</td>
+						</tr>
+					</table>
+				</div>
+        
+        <div id="bottom_nav">
+          <a id="checkout_nav">Go to checkout</a>
+          <a id="continue_shopping">Continue shopping</a>
+        </div>
+			</div> <!-- end of contactArea -->
+
+			<div id="checkout_page">
+				<div id="cartarea2"></div>	
+			
+        <hr class="line" />
+        
+				<div class="totals">
+					<table class="totals_table">
+						<tr>
+              <td>Sub Total</td><td>=</td><td class="sub_total">$0.00</td>
+						</tr>
+						<tr class="totals_table_middle_row">
+							<td>Shipping</td><td>=</td><td class="shipping">$0.00</td>
+						</tr>
+						<tr>
+							<td class="total_label">Total</td><td>=</td><td class="total">$0.00</td>
+						</tr>
+					</table>
+				</div>
+        
+        <div id="checkout2_bottom_nav">
+
+          <a id="back_to_checkout_nav">Back</a>
+
+          <form  id="paypal_form" action="https://www.paypal.com/cgi-bin/webscr" method="post">  
+              <input type="hidden" name="cmd" value="_cart"/>  
+              <input type="hidden" name="upload" value="1"/>  
+              <input type="hidden" name="business" value="carfacial@gmail.com"/>  
+              <input type="hidden" name="shipping" value="6.99"/>  
+              <input type="image" name="submit" border="0" src="https://www.paypal.com/en_US/i/btn/btn_xpressCheckout.gif" alt="PayPal - The safer, eddasier way to pay online"/> 
+          </form> 
+          
+          <form id="google_form" method="post"
+              action="https://checkout.google.com/api/checkout/v2/checkoutForm/Merchant/963038954748911"
+              accept-charset="utf-8">
+              <input type="hidden" name="ship_method_name_1" value="UPS Ground"/>
+              <input type="hidden" name="ship_method_price_1" value="6.99"/>
+
+              <input type="hidden" name="tax_rate" value="0"/>
+              <input type="hidden" name="tax_us_state" value="CA"/>
+
+              <input type="hidden" name="_charset_"/>
+
+              <input type="image" name="Google Checkout" alt="Fast checkout through Google"
+                  src="http://checkout.google.com/buttons/checkout.gif?merchant_id=963038954748911&w=180&h=46&style=white&variant=text&loc=en_US"
+                  height="46" width="180"/>
+          </form>
+
+       </div> <!-- nav bottom -->
+
+			</div>  <!-- end of checkout page -->
+
+		</div> <!-- end of popup -->
+		<div id="backgroundPopup"></div>
+
+		<div id="wrap">
+			<ul id="mycarousel" class="jcarousel-skin-tango">
+				<li> <img class="small_image" src="images/car1.png" alt="car1" /></li>
+				<li> <img class="small_image" src="images/car2.png" alt="car2" /></li>
+				<li> <img class="small_image" src="images/car3.png" alt="car3" /></li>
+				<li> <img class="small_image" src="images/car4.png" alt="car4" /></li>
+				<li> <img class="small_image" src="images/car5.png" alt="car5" /></li>
+				<li> <img class="small_image" src="images/car6.png" alt="car6" /></li>
+				<li> <img class="small_image" src="images/car7.png" alt="car7" /></li>
+				<li> <img class="small_image" src="images/car8.png" alt="car8" /></li>
+				<li> <img class="small_image" src="images/car9.png" alt="car9" /></li>
+				<li> <img class="small_image" src="images/car10.png" alt="car10" /></li>
+				<li> <img class="small_image" src="images/car11.png" alt="car11" /></li>
+				<li> <img class="small_image" src="images/car12.png" alt="car12" /></li>
+				<li> <img class="small_image" src="images/car13.png" alt="car13" /></li>
+				<li> <img class="small_image" src="images/car14.png" alt="car14" /></li>
+				<li> <img class="small_image" src="images/car15.png" alt="car15" /></li>
+				<li> <img class="small_image" src="images/car16.png" alt="car16" /></li>
+				<li> <img class="small_image" src="images/car17.png" alt="car17" /></li>
+				<li> <img class="small_image" src="images/car18.png" alt="car18" /></li>
+				<li> <img class="small_image" src="images/car19.png" alt="car19" /></li>
+				<li> <img class="small_image" src="images/car20.png" alt="car20" /></li>
+				<li> <img class="small_image" src="images/car21.png" alt="car21" /></li>
+				<li> <img class="small_image" src="images/car22.png" alt="car22" /></li>
+				<li> <img class="small_image" src="images/car23.png" alt="car23" /></li>
+				<li> <img class="small_image" src="images/car24.png" alt="car24" /></li>
+				<li> <img class="small_image" src="images/car25.png" alt="car25" /></li>
+				<li> <img class="small_image" src="images/car26.png" alt="car26" /></li>
+				<li> <img class="small_image" src="images/car27.png" alt="car27" /></li>
+				<li> <img class="small_image" src="images/car28.png" alt="car28" /></li>
+				<li> <img class="small_image" src="images/car29.png" alt="car28" /></li>
+				<li> <img class="small_image" src="images/car30.png" alt="car30" /></li>
+				<li> <img class="small_image" src="images/car31.png" alt="car31" /></li>
+				<li> <img class="small_image" src="images/car32.png" alt="car32" /></li>
+				<li> <img class="small_image" src="images/car33.png" alt="car33" /></li>
+				<li> <img class="small_image" src="images/car34.png" alt="car34" /></li>
+				<li> <img class="small_image" src="images/car35.png" alt="car35" /></li>
+				<li> <img class="small_image" src="images/car36.png" alt="car36" /></li>
+				<li> <img class="small_image" src="images/car37.png" alt="car36" /></li>
+				<li> <img class="small_image" src="images/car38.png" alt="car36" /></li>
+			</ul>
+		</div>
+	</div><!--end of container-->
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+	<script src="javascript/main.js" type="text/javascript"></script>
+	<script src="javascript/custom.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  
+  <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker("UA-7062116-2");
+      pageTracker._trackPageview();
+    } 
+    catch(err) {}
+  </script>
+
+</body>
+</html>
+
+ 
+
