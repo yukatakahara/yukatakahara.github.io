@@ -1,0 +1,144 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 99%;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  /*vertical-align: baseline;*/
+}
+
+body {
+  /*font: 12px/160% Verdana, Arial, 'Bitstream Vera Sans', sans-serif;*/
+  background-image: url(bkgd_tile.png);
+  line-height: 1.25;
+
+}
+
+h2 {
+
+ font-size: 2em;
+ font-weight: bold;
+}
+
+a:link, a:visited, a:active, a:hover {
+  text-decoration: none;	
+  color: #00E;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+.clear { overflow : hidden; }
+
+.main, .top {
+  background-color: white;
+  width: 860px;
+  margin: 0px auto 0px; 
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.main { overflow : hidden; }
+
+.main-bottom {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.top {
+  min-height: 120px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 860px;
+  padding: 10px 20px 20px 20px;
+}
+
+.name {
+  width: 400px;
+  float: left;
+  margin-top: 93px;
+}
+
+.address {
+  font-size: 0.9em;
+}
+
+.contact-info {
+  float: right;
+  text-align: right;
+}
+
+.downloads {
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+
+.work {
+  background-color: #E8E8E8;  
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.work-details { 
+  width: 625px;
+  float: right;
+}
+
+.arrow1 {
+	margin:  0px 30px 0px 0px;
+}
+
+.arrow2 {
+	margin:  0px 0px 0px 150px;
+}
+
+#main-pic{
+	height: 250px; 
+	width: 280px;  
+	float: right;
+	padding: 0px 30px 0px 0px;
+	-moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+
+#right{
+	width: 350px;
+	float: right;
+}
+
+
+#left{
+	width: 450px;
+	padding: 0px 0px 0px 10px;
+}
+
+#education{
+	width: 650px;
+	padding: 0px 0px 0px 210px;
+	text-align: right;
+	font-style: italic;
+
+}
+
+.activities ul
+{
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
